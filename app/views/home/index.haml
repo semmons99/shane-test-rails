@@ -1,0 +1,14 @@
+%table{border: 1}
+  %thead
+    %tr
+      %td Login
+      %td Email
+      %td First Name
+      %td Last Name
+  %tbody
+    - users.each do |user|
+      %tr.user
+        %td= user.login
+        %td= user.email
+        %td= user.first_name
+        %td= user.last_name
